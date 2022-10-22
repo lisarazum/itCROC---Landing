@@ -1,0 +1,19 @@
+.promo {
+  padding-top: 75px;
+  padding-bottom: 103px;
+
+  &__link {
+    margin-bottom: 145px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 116.68%;
+    color: #0A0308;
+
+    & i {
+      font-style: italic;
+    }
+  }
+}

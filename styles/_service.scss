@@ -1,0 +1,61 @@
+.service {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    padding: 18px 232px 100px 25px;
+    width: 50%;
+    height: 368px;
+    background: #0A0308;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 116.68%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__paragraph {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 116.68%;
+    color: #FFFFFF;
+  }
+
+  &__card--1 {
+    background-image: url('../img/service-1.png');
+  }
+  &__card--2 {
+    background-image: url('../img/service-2.png');
+  }
+  &__card--3 {
+    background-image: url('../img/service-3.png');
+  }
+  &__card--4 {
+    background-image: url('../img/service-4.png');
+  }
+  &__card--5 {
+    background-image: url('../img/service-5.png');
+  }
+  &__card--6 {
+    background-image: url('../img/service-6.png');
+  }
+  &__card--7 {
+    background-image: url('../img/service-7.png');
+  }
+  &__card--8 {
+    background-image: url('../img/service-8.png');
+  }
+
+}

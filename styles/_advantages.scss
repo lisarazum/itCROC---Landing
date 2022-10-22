@@ -1,0 +1,41 @@
+.advantages {
+  padding-top: 102px;
+  padding-bottom: 122px;
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    display: flex;
+    padding: 30px 35px 30px 25px;
+    background: rgba(153, 153, 153, 0.1);
+    border-radius: 16px;
+    width: 50%;
+  }
+
+  &__left {
+    position: relative;
+    margin-right: 33px;
+    width: 164px;
+    height: 164px;
+    background: #0A0308;
+    border-radius: 50%;
+  }
+
+  &__img {
+    position: absolute;
+    top: center;
+    left: center;
+  }
+
+  &__title {
+    margin-bottom: 7px;
+    color: #FFFFFF;
+  }
+
+  &__paragraph {
+    color: #FFFFFF;
+  }
+}

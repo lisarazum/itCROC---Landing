@@ -1,0 +1,43 @@
+.why {
+  padding-top: 100px;
+  padding-bottom: 123px;
+
+  &__title {
+    color: #FFFFFF;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    max-width: 322px;
+  }
+
+  &__top {
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    border-radius: 16px;
+  }
+
+  &__title-small {
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 116.68%;
+    color: #0A0308;
+  }
+
+  &__paragraph {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 116.68%;
+    color: #0A0308;
+  }
+}
