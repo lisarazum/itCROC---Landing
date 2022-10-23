@@ -2,7 +2,7 @@
   padding-top: 100px;
   padding-bottom: 117px;
 
-  &__title {
+  &__section-title {
     color: #FFFFFF;
   }
 
@@ -15,15 +15,63 @@
     color: #0A0308;
     background: #F0FF74;
     border-radius: 16px;
+
+    &:focus {
+      background: #8D46F6;
+    }
+
+    @include for-desktop {
+      &:hover {
+        color: #FFFFFF;
+        background: linear-gradient(91.4deg, #8D46F6 1.01%, #4D07B5 46.98%);
+      }
+      &:active {
+        background: #4D07B5;
+      }
+    }
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__card {
+    width: 49.2%;
     padding: 18px 14px 84px 25px;
     background: rgba(153, 153, 153, 0.1);
     border-radius: 16px;
+
+    &--long {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    &:nth-child(2) {
+      margin-right: 20px;
+    }
+  }
+
+  &__left {
+    width: 50%;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 9px;
+    padding-right: 68px;
+  }
+
+  &__svg {
+    margin-bottom: 12px;
   }
 
   &__card--title {
+    margin-bottom: 33px;
     color: #FFFFFF;
     text-transform: uppercase;
   }
@@ -36,6 +84,7 @@
   }
 
   &__right--paragraph {
+    margin-bottom: 40px;
     font-weight: 400;
     font-size: 20px;
     line-height: 116.68%;

@@ -37,11 +37,44 @@
   &__btn--yellow {
     margin-right: 20px;
     background: #F0FF74;
+    border: 2px solid transparent;
     border-radius: 16px;
+    transition: color .1s ease-in-out, background .3s ease-in-out;
+
+    &:focus {
+      background: #8D46F6;
+    }
+
+    @include for-desktop {
+      &:hover {
+        color: #FFFFFF;
+        background: linear-gradient(91.4deg, #8D46F6 1.01%, #4D07B5 46.98%);
+      }
+      &:active {
+        background: #4D07B5;
+      }
+    }
   }
 
   &__btn--order-call {
     border: 2px solid #0A0308;
     border-radius: 16px;
+    transition: all .3s ease-in-out;
+
+    &:focus {
+      background: #8D46F6;
+    }
+
+    @include for-desktop {
+      &:hover {
+        color: #0A0308;
+        background: #F0FF74;
+        border-color: transparent;
+      }
+      &:active {
+        color: #0A0308;
+        background: #F0FF74;
+      }
+    }
   }
 }

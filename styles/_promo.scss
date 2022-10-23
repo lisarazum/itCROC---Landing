@@ -3,10 +3,12 @@
   padding-bottom: 103px;
 
   &__link {
+    display: inline-block;
     margin-bottom: 145px;
   }
 
   &__title {
+    width: 90%;
     font-weight: 600;
     font-size: 64px;
     line-height: 116.68%;

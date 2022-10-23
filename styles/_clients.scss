@@ -1,0 +1,43 @@
+.clients {
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  &__swiper {
+    padding-bottom: 80px;
+  }
+  
+  &__swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 310px;
+    height: 151px;
+  }
+
+  &__link {
+    transition: all .3s ease-in-out;
+    &:focus {
+      outline: 2px solid #4D07B5;
+    }
+
+    @include for-desktop {
+      &:hover {
+        opacity: 0.7;
+      }
+      &:active {
+        outline: 2px solid #4D07B5;
+      }
+    }
+  }
+
+  &__swiper-pagination > .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: #7BD7BD;
+    opacity: 1;
+  }
+
+  &__swiper-pagination > .swiper-pagination-bullet-active {
+    background: #F0FF74;
+  }
+}

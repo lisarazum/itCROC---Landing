@@ -9,12 +9,17 @@
 
   &__card {
     padding: 18px 232px 100px 25px;
-    width: 50%;
+    width: 47%;
     height: 368px;
     background: #0A0308;
     border-radius: 16px;
     background-repeat: no-repeat;
     background-position: center right;
+
+    &:nth-child(2n + 1) {
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
   }
 
   &__title {

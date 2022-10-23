@@ -3,8 +3,9 @@
   padding-bottom: 122px;
 
   &__block {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
   }
 
   &__card {
@@ -12,11 +13,11 @@
     padding: 30px 35px 30px 25px;
     background: rgba(153, 153, 153, 0.1);
     border-radius: 16px;
-    width: 50%;
   }
 
   &__left {
     position: relative;
+    display: flex;
     margin-right: 33px;
     width: 164px;
     height: 164px;
@@ -24,10 +25,14 @@
     border-radius: 50%;
   }
 
+  &__right {
+    width: 70%;
+  }
+
   &__img {
     position: absolute;
-    top: center;
-    left: center;
+    top: 28%;
+    left: 28%;
   }
 
   &__title {

@@ -8,10 +8,39 @@
     height: 100%;
   }
 
+  &__link {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      border-bottom: 2px solid #4D07B5;
+      opacity: 0;
+    }
+  }
+
   &__tel {
     font-weight: 400;
     font-size: 24px;
     line-height: 116.68%;
     color: #0A0308;
+    transition: all .3s ease-in-out;
+
+    &:focus {
+      outline: 1px solid #4D07B5;
+      outline-offset: 2px;
+    }
+
+    @include for-desktop {
+      &:hover {
+        color: #8D46F6;
+      }
+      &:active {
+        color: #4D07B5;
+      }
+    }
   }
 }

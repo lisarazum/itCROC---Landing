@@ -1,0 +1,79 @@
+.consult {
+  padding-top: 50px;
+  padding-bottom: 131px;
+
+  &__paragraph {
+    margin-bottom: 44px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 116.68%;
+    color: #0A0308;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  &__label {
+    display: flex;
+    padding: 21px 0;
+    border-bottom: 1px solid #999999;
+  }
+
+  &__input {
+    width: 100%;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 116.68%;
+    color: #999999;
+    outline: none;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 116.68%;
+      color: #999999;
+    }
+  }
+
+  &__accept {
+    display: flex;
+    align-items: center;
+    margin-top: 44px;
+  }
+
+  &__btn {
+    display: inline-block;
+    margin-right: 52px;
+    padding: 10px 25px;
+    max-width: 178px;
+    min-height: 48px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 116.68%;
+    color: #0A0308;
+    background: #F0FF74;
+    border-radius: 16px;
+
+    &:focus {
+      background: #8D46F6;
+    }
+
+    @include for-desktop {
+      &:hover {
+        color: #FFFFFF;
+        background: linear-gradient(91.4deg, #8D46F6 1.01%, #4D07B5 46.98%);
+      }
+      &:active {
+        background: #4D07B5;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 116.68%;
+    color: #0A0308;
+  }
+}
