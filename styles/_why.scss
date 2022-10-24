@@ -1,8 +1,14 @@
 .why {
   padding-top: 100px;
-  padding-bottom: 123px;
+  padding-bottom: 99px;
 
+  @include desktop {
+    padding-top: 59px;
+    padding-bottom: 62px;
+  }
+  
   &__section-title {
+    margin-bottom: 84px;
     color: #0A0308;
   }
 
@@ -12,26 +18,49 @@
 
   &__block {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+    @include desktop {
+      flex-wrap: wrap;
+    }
   }
 
   &__card {
     display: flex;
     flex-direction: column;
-    max-width: 322px;
+    width: 25%;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+      @include desktop {
+        margin-right: unset;
+      }
+    }
+
+    @include desktop {
+      width: 48%;
+
+      &:not(:nth-child(2n)) {
+        margin-right: 20px;
+      }
+
+      &:nth-child(n+2) {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   &__top {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
 
   &__image {
+    height: 224px;
+    width: 100%;
     border-radius: 16px;
   }
 
   &__title-small {
-    margin-bottom: 7px;
+    margin-bottom: 8px;
     font-weight: 600;
     font-size: 28px;
     line-height: 116.68%;

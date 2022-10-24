@@ -1,15 +1,27 @@
 .service {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 99px;
+  padding-bottom: 40px;
+
+  @include desktop {
+    padding-top: 58px;
+  }
 
   &__block {
     display: flex;
     flex-wrap: wrap;
   }
 
+  &__section-title {
+    margin-bottom: 49px;
+
+    @include desktop {
+      margin-bottom: 59px;
+    }
+  }
+
   &__card {
-    padding: 18px 232px 100px 25px;
-    width: 47%;
+    padding: 18px 232px 100px 23px;
+    width: 49%;
     height: 368px;
     background: #0A0308;
     border-radius: 16px;
@@ -20,15 +32,26 @@
       margin-right: 20px;
       margin-bottom: 20px;
     }
+
+    @include desktop {
+      padding-right: 30px;
+      width: 48.9%;
+      height: 488px;
+      background-position: right bottom;
+    }
   }
 
   &__title {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
     font-weight: 600;
     font-size: 36px;
     line-height: 116.68%;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    @include desktop {
+      font-size: 32px;
+    }
   }
 
   &__paragraph {
@@ -54,13 +77,21 @@
     background-image: url('../img/service-5.png');
   }
   &__card--6 {
+    padding-right: 252px;
     background-image: url('../img/service-6.png');
   }
   &__card--7 {
     background-image: url('../img/service-7.png');
+    background-position: bottom 32% right;
+
+    @include desktop {
+      background-position: bottom 0 right;
+    }
   }
   &__card--8 {
+    padding-right: 297px;
     background-image: url('../img/service-8.png');
+    background-position: bottom -1% right;
   }
 
 }

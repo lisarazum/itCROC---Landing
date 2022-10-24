@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/styles.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -26,7 +27,7 @@
     <section class="hero green">
       <div class="container">
         <h1 class="title hero__title">ИТ-аутсорсинг</h1>
-        <p class="paragraph hero__paragraph"><span class="gradient">Думайте о бизнесе,</span> а не о технической поддержке.</p>
+        <p class="paragraph hero__paragraph"><span class="gradient">Думайте о&nbsp;бизнесе,</span> а&nbsp;не&nbsp;о&nbsp;технической поддержке.</p>
         <div class="hero__btns">
           <a href="#" class="hero__btn hero__btn--yellow">Рассчитать стоимость</a>
           <button class="btn-reset hero__btn hero__btn--order-call">Заказать звонок</button>
@@ -98,7 +99,7 @@
     <section class="advantages black">
       <div class="container">
         <span class="grey-text">ПРЕИМУЩЕСТВА ИТ-АУТСОРСИНГА</span>
-        <h2 class="title section-title why__title">Не тратьте время на поиск дорогих сотрудников в штат — <span class="gradient">работайте сразу с профессионалами</span></h2>
+        <h2 class="title section-title advantages__section-title">Не тратьте время на поиск дорогих сотрудников в штат — <span class="gradient">работайте сразу с профессионалами</span></h2>
         <div class="advantages__block">
           <div class="advantages__card">
             <div class="advantages__left">
@@ -138,7 +139,7 @@
           </div>
           <div class="advantages__card">
             <div class="advantages__left">
-              <img src="img/svg/people.svg" alt="Компетенции" class="advantages__img">
+              <img src="img/svg/people.svg" alt="Компетенции" class="advantages__img advantages__img--five">
             </div>
             <div class="advantages__right">
               <h3 class="title advantages__title">Компетенции</h3>
@@ -193,7 +194,7 @@
           </div>
           <div class="service__card service__card--8">
             <h3 class="title service__title">Корпоративная почта</h3>
-            <p class="paragraph service__paragraph">Подключение, настройка и сопровождение почтовых решений, подходящих для любого типа компаний.</p>
+            <p class="paragraph service__paragraph">Подключение, настройка и&nbsp;сопровождение почтовых решений, подходящих для любого типа компаний.</p>
           </div>
         </div>
       </div>
@@ -202,7 +203,7 @@
     <section class="promo green">
       <div class="container">
         <a href="#" class="promo__link">
-          <svg width="685" height="153" viewBox="0 0 685 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="promo__svg" width="685" height="153" viewBox="0 0 685 153" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0.923771 58.7288C-0.521724 59.1973 -0.184301 61.3302 1.33531 61.3302H5.05582L13.8025 84.0414L22.5492 61.3302H35.734L44.4807 84.0414L53.2275 61.3302H66.791L75.5377 84.0414L84.2844 61.3302H97.4692L106.216 84.0414L114.963 61.3302H129.409C135.303 61.3302 140.081 66.1056 140.081 71.9963V80.9457C140.081 86.4783 135.867 91.027 130.471 91.5597L121.744 68.9006L112.998 91.6118H99.8129L91.0662 68.9006L82.3195 91.6118H68.7559L60.0092 68.9006L51.2625 91.6118H38.0777L29.331 68.9006L20.5843 91.6118H1.33527C-0.184338 91.6118 -0.521763 93.7448 0.923732 94.2133L179.083 151.957C179.945 152.236 180.828 151.594 180.828 150.688V2.25367C180.828 1.34821 179.945 0.706118 179.083 0.98544L0.923771 58.7288Z" fill="white"/>
             <path d="M220.324 109.029H204.662L181.079 77.3322V109.029H167.286V46.4909H181.079V76.7761L204.395 46.4909H219.078L195.362 76.5195L220.324 109.029Z" fill="#0A0308"/>
             <path d="M248.835 46.4909C257.229 46.4909 263.355 48.2305 267.211 51.7096C271.067 55.1601 272.995 59.9225 272.995 65.9966C272.995 68.7343 272.565 71.3579 271.705 73.8674C270.845 76.3484 269.436 78.5584 267.478 80.4976C265.55 82.4368 262.969 83.9767 259.736 85.1174C256.503 86.2295 252.513 86.7856 247.767 86.7856H241.849V109.029H228.055V46.4909H248.835ZM248.123 57.3559H241.849V75.9206H246.387C248.968 75.9206 251.208 75.5927 253.106 74.9368C255.005 74.2809 256.473 73.2542 257.511 71.8569C258.549 70.4596 259.068 68.663 259.068 66.4672C259.068 63.3873 258.178 61.106 256.399 59.6231C254.619 58.1117 251.86 57.3559 248.123 57.3559Z" fill="#0A0308"/>
@@ -221,7 +222,7 @@
     <section class="work black">
       <div class="container">
         <span class="grey-text">ПРИНЦИПЫ РАБОТЫ</span>
-        <h2 class="title section-title work__section-title">Решаем все проблемы <span class="gradient">быстро и качественно</span>, ведь нам нравится то, что мы делаем </h2>
+        <h2 class="title section-title work__section-title">Решаем все проблемы <span class="gradient">быстро и&nbsp;качественно</span>, ведь нам нравится&nbsp;то, что мы&nbsp;делаем </h2>
         <button class="btn-reset work__btn">Получить КП</button>
         <div class="work__grid">
           <div class="work__card work__card--long">
@@ -321,27 +322,30 @@
     <section class="steps">
       <div class="container">
         <span class="grey-text">КАК МЫ РАБОТАЕМ</span>
-        <h2 class="title section-title clients__title">От аудита до настройки IT-инфраструктуры всего <span class="gradient">несколько шагов</span></h2>
+        <h2 class="title section-title steps__section-title">От&nbsp;аудита до&nbsp;настройки IT&nbsp;-&nbsp;инфраструктуры всего <span class="gradient">несколько шагов</span></h2>
         <div class="steps__block">
           <button class="steps__accordion">
             <span class="steps__number">01</span>
             <span class="steps__text">Проводим аудит ИТ-инфраструктуры</span>
+            <span class="steps__arrow"></span>
           </button>
           <div class="steps__panel">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat illo magni, rem nostrum consectetur explicabo! Dicta quae quisquam nam impedit, temporibus enim reprehenderit vitae quo tenetur dolores sapiente molestiae.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis quidem iusto reiciendis corrupti illo culpa iure placeat rerum fuga perspiciatis sint eligendi aperiam, ut nesciunt necessitatibus? Fugit odio perspiciatis porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aspernatur corporis corrupti deserunt rerum vel voluptates minima itaque voluptatem perferendis! Voluptatum distinctio asperiores nostrum quaerat laboriosam qui labore sed eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat illo magni, rem nostrum consectetur explicabo! Dicta quae quisquam nam impedit, temporibus enim reprehenderit vitae quo tenetur dolores sapiente molestiae.</p>
           </div>
 
           <button class="steps__accordion">
             <span class="steps__number">02</span>
             <span class="steps__text">Составляем план работ</span>
+            <span class="steps__arrow"></span>
           </button>
           <div class="steps__panel">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, nihil saepe. Necessitatibus nihil similique voluptates optio impedit animi, qui veritatis eaque aliquid perferendis rerum earum voluptatem mollitia voluptas dolores pariatur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid libero expedita recusandae saepe fugit natus, quidem cumque suscipit, ut hic porro eum repellendus quibusdam consectetur deserunt nobis velit quisquam iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, nihil saepe. Necessitatibus nihil similique voluptates optio impedit animi, qui veritatis eaque aliquid perferendis rerum earum voluptatem mollitia voluptas dolores pariatur.</p>
           </div>
 
           <button class="steps__accordion">
             <span class="steps__number">03</span>
             <span class="steps__text">Устраняем проблемы и наводим порядок</span>
+            <span class="steps__arrow"></span>
           </button>
           <div class="steps__panel">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis ducimus eveniet assumenda illo cupiditate, commodi error sed cum adipisci suscipit iusto doloribus perspiciatis provident asperiores voluptatum nesciunt! Sunt, quidem?</p>
@@ -350,6 +354,7 @@
           <button class="steps__accordion">
             <span class="steps__number">04</span>
             <span class="steps__text">Процесс обслуживания и поддержки</span>
+            <span class="steps__arrow"></span>
           </button>
           <div class="steps__panel">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis ducimus eveniet assumenda illo cupiditate, commodi error sed cum adipisci suscipit iusto doloribus perspiciatis provident asperiores voluptatum nesciunt! Sunt, quidem?</p>
@@ -361,24 +366,24 @@
     <section class="consult">
       <div class="container">
         <span class="grey-text">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
-        <h2 class="title section-title consult__title"><span class="gradient">Оставьте заявку</span> на консультацию и базовый аудит</h2>
+        <h2 class="title section-title consult__section-title"><span class="gradient">Оставьте заявку</span> на консультацию и базовый аудит</h2>
         <p class="paragraph consult__paragraph">Введите свои данные</p>
         <div class="consult__form">
-          <form action="post" class="form">
+          <form action="#" method="post" class="form" id="consult-form">
             <label class="form__label">
-              <input class="form__input" type="text" name="name" placeholder="Имя">
+              <input class="form__input form-control" required id="form-name" type="text" name="name" placeholder="Имя">
             </label>
             <label class="form__label">
-              <input class="form__input" type="email" name="email" placeholder="E-mail">
+              <input class="form__input form-control" required id="form-email" type="email" name="email" placeholder="E-mail">
             </label>
             <label class="form__label">
-              <input class="form__input" type="tel" name="tel" placeholder="Телефон">
+              <input class="form__input form-control" required id="form-tel" type="tel" name="tel" placeholder="Телефон">
             </label>
             <div class="form__accept">
-              <button class="btn-reset form__btn">
+              <button class="btn-reset form__btn" type="submit" id="form-btn">
                 Отправить
               </button>
-              <span class="form__text">Отправляя свои данные, вы соглашаетесь на обработку персональных данных</span>  
+              <span class="form__text">Отправляя свои данные, вы соглашаетесь на обработку <a href="#">персональных данных</a></span>  
             </div>
             </form>
         </div>

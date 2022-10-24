@@ -1,4 +1,74 @@
 .steps {
-  padding-top: 50px;
+  padding-top: 49px;
   padding-bottom: 50px;
+
+  &__section-title {
+    width: 90%;
+  }
+
+  &__accordion {
+    display: flex;
+    padding: 50px 0;
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    outline: none;
+    color: #4D07B5;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .5s ease-in;
+
+    @include for-desktop {
+      &:hover .steps__text {
+        color: #8D46F6;
+      }
+    }
+
+    &.active .steps__arrow {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__number {
+    display: inline-block;
+    margin-right: 106px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 116.68%;
+    color: #999999;
+  }
+
+  &__text {
+    display: inline-block;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 116.68%;
+    color: #0A0308;
+    transition: all .3s ease-in-out;
+  }
+
+  &__arrow {
+    display: inline-block;
+    margin-right: 41px;
+    width: 26px;
+    height: 39px;
+    background-image: url('../img/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .3s ease-in-out;
+  }
+
+  &__panel {
+    max-height: 0;
+    background-color: white;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+    & > p {
+      padding: 20px 18px;
+    }
+  }
 }

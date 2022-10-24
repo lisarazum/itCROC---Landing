@@ -1,10 +1,27 @@
 .promo {
-  padding-top: 75px;
-  padding-bottom: 103px;
+  padding-top: 76px;
+  padding-bottom: 104px;
+  background: linear-gradient(93.7deg, #7BD7BD 4.94%, #DBE774 36.82%, #C7DE8A 95.51%), url("../img/back.svg");
+  background-blend-mode: color;
+
+  @include desktop {
+    padding-top: 139px;
+    padding-bottom: 131px;
+  }
 
   &__link {
     display: inline-block;
-    margin-bottom: 145px;
+    margin-bottom: 142px;
+
+    @include desktop {
+      margin-bottom: 111px;
+    }
+  }
+
+  &__svg {
+    @include desktop {
+      width: 600px;
+    }
   }
 
   &__title {
@@ -13,6 +30,10 @@
     font-size: 64px;
     line-height: 116.68%;
     color: #0A0308;
+
+    @include desktop {
+      font-size: 48px;
+    }
 
     & i {
       font-style: italic;

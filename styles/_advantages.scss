@@ -1,6 +1,18 @@
 .advantages {
   padding-top: 102px;
-  padding-bottom: 122px;
+  padding-bottom: 126px;
+
+  @include desktop {
+    padding-top: 69px;
+    padding-bottom: 80px;
+  }
+
+  &__section-title {
+    color: #FFFFFF;
+    @include desktop {
+      margin-bottom: 59px;
+    }
+  }
 
   &__block {
     display: grid;
@@ -10,9 +22,13 @@
 
   &__card {
     display: flex;
-    padding: 30px 35px 30px 25px;
+    padding: 28px 39px 30px 25px;
     background: rgba(153, 153, 153, 0.1);
     border-radius: 16px;
+
+    @include desktop {
+      padding: 21px 16px 38px 25px;
+    }
   }
 
   &__left {
@@ -23,6 +39,13 @@
     height: 164px;
     background: #0A0308;
     border-radius: 50%;
+
+    @include desktop {
+      align-self: center;
+      margin-right: 12px;
+      width: 126px;
+      height: 126px;
+    }
   }
 
   &__right {
@@ -33,6 +56,19 @@
     position: absolute;
     top: 28%;
     left: 28%;
+
+    @include desktop {
+      width: 43%;
+    }
+
+    &--five {
+      left: 20%;
+
+      @include desktop {
+        width: 59%;
+      }
+    }
+
   }
 
   &__title {

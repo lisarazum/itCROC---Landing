@@ -1,9 +1,14 @@
 .consult {
-  padding-top: 50px;
-  padding-bottom: 131px;
+  padding-top: 47px;
+  padding-bottom: 133px;
+
+  &__section-title {
+    margin-bottom: 101px;
+    width: 85%;
+  }
 
   &__paragraph {
-    margin-bottom: 44px;
+    margin-bottom: 24px;
     font-weight: 600;
     font-size: 36px;
     line-height: 116.68%;
@@ -15,9 +20,19 @@
   display: flex;
   flex-direction: column;
   &__label {
+    position: relative;
     display: flex;
-    padding: 21px 0;
+    padding: 20px 0;
     border-bottom: 1px solid #999999;
+
+    & > .just-validate-error-label {
+      position: absolute;
+      top: 4px;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      font-size: 15px;
+    }
   }
 
   &__input {
@@ -45,7 +60,7 @@
   &__btn {
     display: inline-block;
     margin-right: 52px;
-    padding: 10px 25px;
+    padding: 10px 27px;
     max-width: 178px;
     min-height: 48px;
     font-weight: 400;
@@ -75,5 +90,18 @@
     font-size: 20px;
     line-height: 116.68%;
     color: #0A0308;
+
+    & a {
+      transition: all .3s ease-in-out;
+      &:focus {
+        color: #8D46F6;
+      }
+      @include for-desktop {
+        &:hover,
+        &:active  {
+          color: #8D46F6;
+        }
+      }
+    }
   }
 }

@@ -1,48 +1,16 @@
-.black {
-  background-color: #0A0308;
-}
-
-.green {
-  height: 100%;
-  background: linear-gradient(93.7deg, #7BD7BD 4.94%, #DBE774 36.82%, #C7DE8A 95.51%);
-}
-
-.grey-text {
-  display: inline-block;
-  margin-bottom: 40px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 38px;
-  line-height: 116.68%;
-  color: #999999;
-}
-
-.section-title {
-  margin-bottom: 80px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 116.68%;
-  color: #0A0308;
-}
-
-.gradient {
-  color: transparent;    
-	-webkit-background-clip: text;
-	background-clip: text;
-  background-image: linear-gradient(91.4deg, #8D46F6 1.01%, #4D07B5 46.98%);
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+  box-sizing: border-box;
 }
 
 // breakpoints
 
 @mixin for-desktop {
   @media (min-width: (1025px)) {
-    @content;
-  }
-}
-
-@mixin big-desktop {
-  @media (max-width: (1320px)) {
     @content;
   }
 }
@@ -70,3 +38,108 @@
     @content;
   }
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+	line-height: 1;
+  background-color: #FFFFFF;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  max-width: 1380px;
+  min-width: 320px;
+
+  @include desktop {
+    padding: 0 40px;
+  }
+}
+
+.title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 116.68%;
+}
+
+.paragraph {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 116.68%;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.black {
+  background-color: #0A0308;
+}
+
+.green {
+  height: 100%;
+  background: linear-gradient(93.7deg, #7BD7BD 4.94%, #DBE774 36.82%, #C7DE8A 95.51%);
+}
+
+.grey-text {
+  display: inline-block;
+  margin-bottom: 43px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 116.68%;
+  color: #999999;
+
+  @include desktop {
+    margin-bottom: 30px;
+  }
+}
+
+.section-title {
+  margin-bottom: 80px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 116.68%;
+  color: #0A0308;
+
+  @include desktop {
+    font-size: 48px;
+  }
+}
+
+.gradient {
+  color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+  background-image: linear-gradient(91.4deg, #8D46F6 1.01%, #4D07B5 46.98%);
+}
+
+
