@@ -2,20 +2,38 @@
   padding-top: 100px;
   padding-bottom: 37px;
 
-  &__swiper {
-    padding-bottom: 107px;
-  }
-  
-  &__swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 310px;
-    height: 151px;
+  @include desktop {
+    padding-top: 58px;
+    padding-bottom: 15px;
   }
 
+  @include mobile {
+    padding-top: 40px;
+  }
+
+  &__section-title {
+    margin-bottom: 50px;
+  }
+
+  &__swiper {
+    padding-bottom: 107px;
+
+    @include desktop {
+      padding-bottom: 95px;
+    }
+  }
+
+  &__swiper-wrapper {
+    align-items: center;
+  }
+  
+
   &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all .3s ease-in-out;
+
     &:focus {
       outline: 2px solid #4D07B5;
     }
@@ -30,11 +48,20 @@
     }
   }
 
+  &__swiper-img {
+    align-self: center;
+  }
+
   &__swiper-pagination > .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
     background: #7BD7BD;
     opacity: 1;
+
+    @include desktop {
+      width: 10px;
+      height: 10px;
+    }
   }
 
   &__swiper-pagination > .swiper-pagination-bullet-active {

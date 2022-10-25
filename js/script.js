@@ -1,16 +1,66 @@
-//swiper
+//slider
 
 const swiper = new Swiper('.clients__swiper', {
   loop: true,
-  slidesPerView: 4,
-  slidesPerGroup: 4,
-  spaceBetween: 10,
+  allowTouchMove: true,
+  slidesPerView: 2,
+  slidesPerGroup: 2,
 
   pagination: {
     el: '.clients__swiper-pagination',
     clickable: true,
   },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+    578: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 30,
+    },
+    780: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 30,
+    },
+    980: {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+      spaceBetween: 30,
+    }
+  }
 });
+
+// slider-service
+
+const modalSlider = document.querySelector('.service__slider');
+  let modalSwiper;
+  
+  function mobileSlider() {
+    if (window.innerWidth <= 710 && modalSlider.dataset.mobile == 'false') {
+        modalSwiper = new Swiper(modalSlider, {
+        slidesPerGroup: 1,
+        slidesPerView: "auto",
+        lazy: {
+          loadPrevNext: true,
+        },
+        pagination: {
+          el: '.service__swiper-pagination',
+          clickable: true,
+        },
+      });
+      modalSlider.dataset.mobile = 'true';
+    }
+  
+    mobileSlider()
+  }
+  window.addEventListener('resize', () => {
+    mobileSlider();
+  });
+
 
 //accordion
 

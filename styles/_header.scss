@@ -1,11 +1,22 @@
 .header {
   height: 100px;
 
+  @include mobile {
+    padding-top: 11px;
+    padding-bottom: 13px;
+    height: 137px;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__link {
@@ -19,6 +30,12 @@
       width: 100%;
       border-bottom: 2px solid #4D07B5;
       opacity: 0;
+    }
+  }
+
+  &__logo {
+    @include mobile {
+      width: 95%;
     }
   }
 
@@ -41,6 +58,12 @@
       &:active {
         color: #4D07B5;
       }
+    }
+
+    @include mobile {
+      width: 100%;
+      font-size: 20px;
+      text-align: center;
     }
   }
 }

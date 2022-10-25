@@ -6,6 +6,15 @@
     padding-top: 66px;
   }
 
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include mobile {
+    padding-top: 35px;
+  }
+
   &__section-title {
     margin-bottom: 69px;
     width: 91%;
@@ -13,6 +22,11 @@
 
     @include desktop {
       margin-bottom: 60px;
+      width: 90%;
+    }
+
+    @include mobile {
+      margin-bottom: 41px;
       width: 100%;
     }
   }
@@ -44,11 +58,20 @@
     @include desktop {
       margin-bottom: 60px;
     }
+
+    @include mobile {
+      margin-bottom: 39px;
+      width: 100%;
+    }
   }
 
   &__grid {
     display: flex;
     flex-wrap: wrap;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
   }
 
   &__card {
@@ -57,39 +80,83 @@
     background: rgba(153, 153, 153, 0.1);
     border-radius: 16px;
 
+    @include small-tablet {
+      width: 100%;
+    }
+
+    @include mobile {
+      padding: 19px 19px 20px 18px;
+    }
+
     &--long {
       display: flex;
       justify-content: space-between;
-      padding-bottom: 8px;
+      padding-bottom: 40px;
       margin-bottom: 20px;
       width: 100%;
+
+      @include tablet {
+        flex-direction: column;
+        padding-bottom: 20px;
+      }
+
+      @include mobile {
+        margin-bottom: 26px;
+        padding-bottom: 26px;
+      }
     }
 
     &:nth-child(2) {
       margin-right: auto;
+      @include small-tablet {
+        margin-right: unset;
+        margin-bottom: 20px;
+      }
     }
   }
 
   &__left {
     width: 50%;
+
+    @include desktop {
+      width: 60%;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
   }
 
   &__right {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-top: 33px;
-    padding-right: 64px;
-  }
+    padding-top: 7px;
+    padding-right: 61px;
 
-  &__svg {
-    margin-bottom: 19px;
+    @include desktop {
+      padding-top: 40px;
+      padding-right: 19px;
+    }
+
+    @include tablet {
+      padding-top: 20px;
+    }
+    @include mobile {
+      padding: 0;
+      padding-top: 12px;
+    }
   }
 
   &__card--title {
     margin-bottom: 33px;
     color: #FFFFFF;
     text-transform: uppercase;
+
+    @include mobile {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
   }
 
   &__title {
@@ -97,14 +164,67 @@
     font-size: 36px;
     line-height: 116.68%;
     color: #FFFFFF;
+
+    @include desktop {
+      font-size: 32px;
+    }
+
+    @include mobile {
+      font-size: 22px;
+    }
   }
 
   &__right--paragraph {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
     font-weight: 400;
     font-size: 20px;
     line-height: 116.68%;
     text-align: right;
     color: #999999;
+
+    @include desktop {
+      margin-bottom: 70px;
+    }
+
+    @include mobile {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    @include tablet {
+      &-last {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__gradient-text {
+    font-weight: 600;
+    font-size: 100px;
+    line-height: 116.68%;
+    color: transparent;    
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(91.94deg, #7BD7BD 0.54%, #DEF77E 107.88%);
+
+    @include desktop {
+      font-size: 80px;
+    }
+
+    @include mobile {
+      font-size: 60px;
+    }
+
+    &--small {
+      font-size: 60px;
+
+      @include desktop {
+        font-size: 46px;
+      }
+
+      @include mobile {
+        font-size: 36px;
+      }
+    }
   }
 }

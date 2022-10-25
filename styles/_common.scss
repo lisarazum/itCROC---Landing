@@ -22,7 +22,7 @@
 }
 
 @mixin tablet {
-  @media (max-width: (1000px)) {
+  @media (max-width: (990px)) {
     @content;
   }
 }
@@ -69,6 +69,10 @@ body {
   @include desktop {
     padding: 0 40px;
   }
+
+  @include small-tablet {
+    padding: 0 20px;
+  }
 }
 
 .title {
@@ -76,6 +80,10 @@ body {
   font-weight: 600;
   font-size: 28px;
   line-height: 116.68%;
+
+  @include mobile {
+    font-size: 26px;
+  }
 }
 
 .paragraph {
@@ -83,6 +91,10 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 116.68%;
+
+  @include mobile {
+    font-size: 16px;
+  }
 }
 
 .list-reset {
@@ -120,6 +132,15 @@ body {
   @include desktop {
     margin-bottom: 30px;
   }
+
+  @include tablet {
+    font-size: 25px;
+  }
+
+  @include mobile {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
 }
 
 .section-title {
@@ -132,6 +153,15 @@ body {
 
   @include desktop {
     font-size: 48px;
+  }
+
+  @include tablet {
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+
+  @include mobile {
+    font-size: 30px;
   }
 }
 

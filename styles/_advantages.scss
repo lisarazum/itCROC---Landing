@@ -4,7 +4,11 @@
 
   @include desktop {
     padding-top: 69px;
-    padding-bottom: 80px;
+    padding-bottom: 52px;
+  }
+
+  @include mobile {
+    padding-top: 35px;
   }
 
   &__section-title {
@@ -12,12 +16,20 @@
     @include desktop {
       margin-bottom: 59px;
     }
+
+    @include mobile {
+      margin-bottom: 43px;
+    }
   }
 
   &__block {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__card {
@@ -27,7 +39,13 @@
     border-radius: 16px;
 
     @include desktop {
-      padding: 21px 16px 38px 25px;
+      padding: 21px 5px 48px 25px;
+    }
+
+    @include mobile {
+      align-items: center;
+      justify-content: center;
+      padding: 20px 4px 20px 21px;
     }
   }
 
@@ -45,6 +63,12 @@
       margin-right: 12px;
       width: 126px;
       height: 126px;
+    }
+
+    @include mobile {
+      margin-right: 22px;
+      width: 67px;
+      height: 67px;
     }
   }
 
@@ -74,9 +98,17 @@
   &__title {
     margin-bottom: 7px;
     color: #FFFFFF;
+
+    @include mobile {
+      font-size: 24px;
+    }
   }
 
   &__paragraph {
     color: #FFFFFF;
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 }

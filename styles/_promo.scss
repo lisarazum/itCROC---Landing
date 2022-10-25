@@ -9,6 +9,16 @@
     padding-bottom: 131px;
   }
 
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @include mobile {
+    padding-top: 61px;
+    padding-bottom: 61px;
+  }
+
   &__link {
     display: inline-block;
     margin-bottom: 142px;
@@ -16,11 +26,28 @@
     @include desktop {
       margin-bottom: 111px;
     }
+
+    @include tablet {
+      margin-bottom: 80px;
+    }
+
+    @include mobile {
+      margin-bottom: 60px;
+    }
   }
 
   &__svg {
+    height: 100%;
     @include desktop {
       width: 600px;
+    }
+
+    @include tablet {
+      width: 450px;
+    }
+
+    @include mobile {
+      width: 280px;
     }
   }
 
@@ -33,6 +60,10 @@
 
     @include desktop {
       font-size: 48px;
+    }
+
+    @include mobile {
+      font-size: 30px;
     }
 
     & i {
