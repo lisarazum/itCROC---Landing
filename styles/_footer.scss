@@ -73,7 +73,7 @@
     transition: all .3s ease-in-out;
 
     &:focus {
-      background: #8D46F6;
+      color: #8D46F6;
     }
 
     @include for-desktop {
@@ -81,7 +81,7 @@
         color: #F0FF74;
       }
       &:active {
-        background: #F0FF74;
+        color: #F0FF74;
       }
     }
 
