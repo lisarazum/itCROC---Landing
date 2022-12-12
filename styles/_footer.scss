@@ -1,12 +1,12 @@
 .footer {
-  padding-top: 246px;
-  padding-bottom: 75px;
+  padding-top: 140px;
+  padding-bottom: 70px;
   background: #0A0308 url("../img/back.svg") no-repeat;
   background-size: cover;
   background-position: center center;
 
   @include desktop {
-    padding-top: 73px;
+    padding-top: 90px;
   }
 
   @include mobile {
@@ -64,7 +64,7 @@
   }
 
   &__link {
-    display: block;
+    display: inline-block;
     margin-bottom: 1px;
     font-weight: 600;
     font-size: 36px;

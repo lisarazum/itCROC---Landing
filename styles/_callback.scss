@@ -1,0 +1,93 @@
+.modal {
+	background-color: #fff;
+	min-width: 300px;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+
+  @include tablet {
+    max-width: 500px;
+    min-height: 300px;
+    height: unset;
+  }
+
+  @include mobile {
+    max-width: 300px;
+  }
+
+  &--visible {
+    display: block;
+  }
+
+  &-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+
+    &--visible {
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.callback {
+  &__content {
+    position: relative;
+    padding: 30px;
+    background-color: #fff;
+    color: #000000;
+  }
+
+  &__close {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+
+    &::after,
+    &::before {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-top: 2px solid #000000;
+    }
+
+    &::after {
+      transform: rotate(45deg) translate(-3px, 25px);
+    }
+
+    &::before {
+      transform: rotate(-45deg) translate(3px, 25px);
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__accept {
+    margin-top: 20px;
+  }
+}

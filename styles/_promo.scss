@@ -1,54 +1,29 @@
 .promo {
-  padding-top: 76px;
-  padding-bottom: 104px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background: linear-gradient(93.7deg, #7BD7BD 4.94%, #DBE774 36.82%, #C7DE8A 95.51%), url("../img/back.svg");
   background-blend-mode: color;
 
   @include desktop {
-    padding-top: 139px;
-    padding-bottom: 131px;
-  }
-
-  @include tablet {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-
-  @include mobile {
-    padding-top: 61px;
-    padding-bottom: 61px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   &__link {
-    display: inline-block;
-    margin-bottom: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease-in-out;
 
-    @include desktop {
-      margin-bottom: 111px;
-    }
-
-    @include tablet {
-      margin-bottom: 80px;
-    }
-
-    @include mobile {
-      margin-bottom: 60px;
+    @include for-desktop {
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
 
   &__svg {
-    height: 100%;
-    @include desktop {
-      width: 600px;
-    }
-
-    @include tablet {
-      width: 450px;
-    }
-
-    @include mobile {
-      width: 280px;
-    }
+    width: 65%;
   }
 
   &__title {

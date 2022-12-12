@@ -1,10 +1,10 @@
 .why {
-  padding-top: 100px;
-  padding-bottom: 99px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
   @include desktop {
-    padding-top: 59px;
-    padding-bottom: 62px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   @include mobile {
@@ -12,12 +12,7 @@
   }
   
   &__section-title {
-    margin-bottom: 84px;
     color: #0A0308;
-
-    @include mobile {
-      margin-bottom: 42px;
-    }
   }
 
   &__title {
@@ -97,10 +92,12 @@
 
   &__title-small {
     margin-bottom: 8px;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 116.68%;
+    font-size: 25px;
     color: #0A0308;
+
+    @include tablet {
+      font-size: 23px;
+    }
 
     @include mobile {
       margin-bottom: 12px;
@@ -108,10 +105,11 @@
   }
 
   &__paragraph {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 116.68%;
+    font-size: 19px;
     color: #0A0308;
+    @include tablet {
+      font-size: 18px;
+    }
 
     @include mobile {
       font-size: 16px;

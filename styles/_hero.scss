@@ -8,7 +8,7 @@
   @include desktop {
     padding-top: 24px;
     padding-bottom: 62px;
-    background-position: right -82% center
+    background-position: right -30% center;
   }
 
   @include small-tablet {
@@ -20,42 +20,40 @@
   @include mobile {
     padding-top: 30px;
     padding-bottom: 34px;
-
   }
 
   &__title {
-    margin-bottom: 166px;
+    margin-bottom: 150px;
     font-weight: 700;
-    font-size: 110px;
+    font-size: 100px;
     line-height: 150px;
     color: #0A0308;
 
     @include desktop {
-      margin-bottom: 188px;
+      margin-bottom: 178px;
       font-size: 101px;
     }
 
     @include tablet {
-      font-size: 90px;
+      font-size: 80px;
     }
 
     @include small-tablet {
-      font-size: 50px;
+      margin-bottom: 150px;
+      font-size: 71px;
     }
 
     @include mobile {
-      margin-bottom: 265px;
-      font-size: 37px;
+      margin-bottom: 255px;
+      font-size: 30px;
       line-height: 50px;
     }
   }
 
   &__paragraph {
-    width: 68%;
+    width: 54%;
     margin-bottom: 68px;
-    font-weight: 400;
-    font-size: 38px;
-    line-height: 116.68%;
+    font-size: 30px;
     color: #0A0308;
 
     @include desktop {
@@ -67,9 +65,12 @@
       width: 100%;
     }
 
+    @include small-tablet {
+      font-size: 27px;
+    }
+
     @include mobile {
       margin-bottom: 37px;
-      font-size: 29px;
     }
   }
 
@@ -82,6 +83,7 @@
   }
 
   &__btn {
+    position: relative;
     padding: 10px 25px;
     font-weight: 400;
     font-size: 24px;

@@ -1,10 +1,10 @@
 .consult {
-  padding-top: 47px;
-  padding-bottom: 133px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
   @include desktop {
-    padding-top: 29px;
-    padding-bottom: 87px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   @include mobile {
@@ -12,17 +12,14 @@
   }
 
   &__section-title {
-    margin-bottom: 101px;
-    width: 85%;
+    width: 68%;
 
     @include desktop {
-      margin-bottom: 56px;
       width: 92%;
     }
 
     @include tablet {
       width: 100%;
-      margin-bottom: 40px;
     }
   }
 
@@ -77,7 +74,7 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 116.68%;
-    color: #999999;
+    color: #000000;
     outline: none;
 
     &::placeholder {
