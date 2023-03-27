@@ -85,6 +85,10 @@
       }
     }
 
+    @include small-tablet {
+      display: block;
+    }
+
     @include mobile {
       font-size: 24px;
     }

@@ -33,7 +33,6 @@
         <p class="paragraph hero__paragraph">Наши услуги позволяют Вам полностью сосредоточиться <span class="gradient">на&nbsp;бизнесе</span>, доверив работу с&nbsp;ИТ-инфраструктурой профессионалам</p>
         <div class="hero__btns">
           <button class="btn-reset hero__btn hero__btn--yellow popup-link" data-path="callback-popup">Заказать звонок</button>
-<!--          <button class="btn-reset hero__btn hero__btn--order-call">Заказать звонок</button> -->
         </div>
       </div>
     </section>
@@ -412,29 +411,25 @@
     </div>
   </footer>
 
-  <div class="modals">
-    <div class="modal-overlay">
-      <div class="modal callback" data-target="callback-popup">
-        <div class="callback__content">
-          <a href="#" class="modal__close callback__close"></a>
-          <h3 class="title callback__title">Закажите обратный звонок</h3>
-          <p class="paragraph callback__text">Оставьте ваш телефон и наш консультант свяжется с Вами</p>
-          <form action="#" method="post" class="form callback__form">
-            <label class="callback__label form__label">
-              <input class="callback__input form__input callback-name" id="callback-name" name="name" type="text" data-validate-field="name" required placeholder="Имя">
-            </label>
-            <label class="callback__label form__label">
-              <input class="callback__input form__input callback-tel" id="callback-tel" name="tel" type="tel" data-validate-field="tel" required placeholder="Телефон">
-            </label>
-            <div class="callback__accept">
-              <button class="btn-reset callback__btn form__btn" type="submit">
-                Заказать
-              </button>
-            </div>
-          </form>
-        </div>
+  <div class="modal-overlay"></div>
+
+  <div class="callback" data-target="callback-popup">
+    <a href="#" class="callback__close"></a>
+    <h3 class="title callback__title">Закажите обратный звонок</h3>
+    <p class="paragraph callback__text">Оставьте ваш телефон и наш консультант свяжется с Вами</p>
+    <form action="#" method="post" class="form callback__form">
+      <label class="callback__label form__label">
+        <input class="callback__input form__input callback-name" id="callback-name" name="name" type="text" data-validate-field="name" required placeholder="Имя">
+      </label>
+      <label class="callback__label form__label">
+        <input class="callback__input form__input callback-tel" id="callback-tel" name="tel" type="tel" data-validate-field="tel" required placeholder="Телефон">
+      </label>
+      <div class="callback__accept">
+        <button class="btn-reset callback__btn form__btn" type="submit">
+          Заказать
+        </button>
       </div>
-    </div>
+    </form>
   </div>
 
 </body>
